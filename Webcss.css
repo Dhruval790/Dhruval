@@ -1,0 +1,207 @@
+.header {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.329), rgba(0, 0, 0, 0.329)),
+    url("./blur-close-up-code-computer-546819.jpg") center/cover no-repeat;
+  position: relative;
+  background-attachment: fixed;
+}
+.banner {
+  position: absolute;
+  line-height: 1.5;
+  top: 40%;
+  left: 20%;
+  text-align: center;
+  transform: translate(10%, 10%);
+  letter-spacing: 0.5rem;
+  color: aliceblue;
+}
+.banner-btn,
+.main-btn {
+  display: inline-block;
+  background: black;
+  text-transform: uppercase;
+  padding: 0.8rem 1.2rem;
+  color: wheat;
+  font-weight: bold;
+  outline: 0.2rem solid black;
+  outline-offset: 4px;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  transition: 0.3s;
+}
+.banner-btn:hover {
+  cursor: pointer;
+  text-decoration: none;
+  transition: 0.2s;
+  color: white;
+}
+
+div.container {
+  font-family: Raleway;
+  /* margin: auto 0px; */
+  opacity: 1;
+  background-color: blue;
+  width: 100%;
+  padding: 1em 1em;
+  text-align: center;
+}
+
+div.container a {
+  color: black;
+  text-decoration: none;
+  font: 20px Raleway;
+  margin: 0px 10px;
+  padding: 10px 10px;
+  position: relative;
+  z-index: 0;
+  cursor: pointer;
+}
+div.borderYtoX a:before,
+div.borderYtoX a:after {
+  position: absolute;
+  opacity: 0.5;
+  height: 100%;
+  width: 2px;
+  content: "";
+  background: black;
+  transition: all 0.3s;
+}
+
+div.borderYtoX a:before {
+  left: 0px;
+  top: 0px;
+}
+
+div.borderYtoX a:after {
+  right: 0px;
+  bottom: 0px;
+}
+
+div.borderYtoX a:hover:before,
+div.borderYtoX a:hover:after {
+  opacity: 1;
+  height: 2px;
+  width: 100%;
+}
+.menu-template {
+  height: 40vh;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5)),
+    url("./Cafe1.jpg") center/cover no-repeat;
+  position: relative;
+  background-attachment: fixed;
+}
+
+.menu-title {
+  font-family: Oraqleimport;
+  color: #bd1220;
+  margin-top: 2.5rem;
+  line-height: 1.3;
+  text-align: center;
+  padding-top: 6.5%;
+  font-size: 65px;
+}
+
+.menu-subtitle {
+  text-transform: uppercase;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: white;
+  font-size: 40px;
+}
+
+.menu {
+  background-color: #e0e5ec;
+  display: inline-flex;
+  width: 100%;
+  padding: 1rem;
+}
+
+.menu-section {
+  float: left;
+  background-color: #e0e5ec;
+  width: 25%;
+  padding: 2rem;
+  height: 400px;
+}
+
+.menu-flip-card {
+  background-color: transparent;
+  width: 90%;
+  height: 105%;
+  perspective: 1000px;
+}
+
+.menu-flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.5s;
+  transform-style: preserve-3d;
+  box-shadow: 9px 9px 16px rgb(163, 177, 198, 0.6),
+    -9px -9px 16px rgba(255, 255, 255, 0.5);
+  border-radius: 5%;
+  background: none;
+}
+
+.menu-flip-card:hover .menu-flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.menu-flip-card-front,
+.menu-flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.menu-flip-card-front {
+  background: #e0e5ec;
+  color: black;
+}
+
+.menu-flip-card-back {
+  background-color: #e0e5ec;
+  color: white;
+  transform: rotateY(180deg);
+  border-radius: 5%;
+}
+
+.menu-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.menu-text-title {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #bd1220;
+}
+
+.menu-image {
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+}
+.section-2 {
+  background: url("./blur-close-up-code-computer-546819.jpg") center/cover
+    no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  width: 100%;
+}
+.child {
+  color: white;
+  max-height: 40%;
+  max-width: 40%;
+  border: 2px solid black;
+  border-radius: 30px;
+  padding: 50px 0px;
+}
